@@ -1,0 +1,108 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>David Okuonghae</title>
+    </head>
+    <body>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const links = document.querySelectorAll("nav ul li a");
+        
+                links.forEach((link) => {
+                    link.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        const targetId = link.getAttribute("href").substring(1);
+                        const targetSection = document.getElementById(targetId);
+                        const topOffset = targetSection.offsetTop;
+        
+                        window.scrollTo({
+                            top: topOffset,
+                            behavior: "smooth",
+                        });
+                    });
+                });
+            });
+        </script>
+        
+        <header>
+        <h1>David Okuonghae</h1>
+        <p>Front-End Developer|Back-End Developer|Web Designer</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <h2>Welcome to David Okuonghae's Full-Stack Developer Journey</h2>
+
+            <h2>About Me</h2>
+            <p>Hello there! I'm David Okuonghae, and I warmly welcome you to my digital world. Here, I'm excited to take you on a journey through my life as a full-stack developer. This is not just a website; it's a living testament to my passion for coding and my relentless pursuit of knowledge in the ever-evolving realm of web development.</p>
+            <h2>The Beginning</h2>
+            <p>My journey began with a simple "Hello, World!" program, but it has since transformed into a whirlwind exploration of the entire software development ecosystem. From those early days of HTML and CSS, I've steadily progressed into a full-stack developer, diving deep into both front-end and back-end technologies.</p>
+            <h2>Front-End Magic</h2>
+            <p>On the front-end, I've honed my skills in crafting beautiful and intuitive user interfaces. HTML, CSS, and JavaScript became my trusted companions. I've created pixel-perfect designs, responsive layouts, and interactive web applications that captivate and engage users.</p>
+            <h2>Back-End Adventures</h2>
+            <p>But my journey doesn't stop at the front-end. I've delved into the back-end realm, where databases, servers, and APIs come to life. Through languages like Python, Node.js, and Ruby, I've built robust and scalable server-side applications that power the web experiences you see on the surface.</p>
+            <h2>The Full-Stack Fusion</h2>
+            <p>The true magic happens at the intersection of front-end and back-end development. This is where I've seamlessly integrated the user experience with the underlying data and logic. Whether it's creating e-commerce platforms, social networking sites, or dynamic web apps, I've strived for a harmonious balance between form and function.</p>
+            <h2>Constant Learning</h2>
+            <p>My journey is marked by continuous learning and growth. I'm constantly adapting to new technologies, frameworks, and methodologies. I'm a firm believer in the principle that there's always something new to discover and implement, which is why I'm on a never-ending quest to expand my knowledge and skills.</p>
+            <h2>Join Me on This Adventure</h2>
+            <p>I invite you to explore this website, where I'll share my experiences, projects, and insights as a full-stack developer. Whether you're a fellow developer, a prospective client, or simply someone interested in the world of technology, I hope my journey inspires and informs.</p>
+            <p>Thank you for visiting, and I look forward to sharing this exciting adventure with you!</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="Web capture_13-11-2023_205821_gilded-marigold-eafb44.netlify.app.jpeg" alt="Project1">
+                <h3><a href="https://gilded-marigold-eafb44.netlify.app/">Online Quiz (HTML and CSS)</a></h3>
+                <p>Experience our captivating online quiz, beautifully crafted with HTML and CSS. Enjoy stunning visuals, seamless navigation, and responsive design. Test your knowledge, get instant feedback, and personalize your experience. Dive in and challenge yourself!</p>
+            </div>
+            <div class="project">
+                <img src="registration.jpeg" alt="Project2">
+                <h3><a href="https://zesty-cocada-ec9056.netlify.app/">Registration Form Description</a></h3>
+                <p>My registration form is a user-friendly interface designed with HTML and CSS. It features a modern, clean layout with input fields for essential user information. Error handling ensures accurate data submission, and interactive buttons provide a seamless experience. The form is responsive, privacy-focused, and accessible. Its purpose is to facilitate user account creation, enabling access to personalized content and interactions on the platform.</p>
+            </div>
+            <div class="project">
+                <img src="shop.jpeg" alt="Project3">
+                <h3><a href="https://statuesque-melomakarona.netlify.app/">E-commerce store</a></h3>
+                <p>E-commerce store made with html, css and JavaScript.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <h2>David Okuonghae</h2>
+            <p>Full-Stack Developer | Web Enthusiast</p>
+            <img src="dp.jpg" alt="profile-pic">
+            <ul>
+                <li>Email: <a href="dokuonghae256@gmail.com">dokuonghae256@gmail.com</a><br></li>
+                <li>Phone: +2349135525079<br></li>
+                <li>Location: Lagos, Nigeria<br></li>
+                <li>LinkedIn: <a href="http://www.linkedin.com/in/david-okuonghae-656356270/">LinkedIn Profile</a><br></li>
+                <li>GitHub: <a href="https://github.com/Okuonghae17">GitHub Profile</a><br></li>
+            </ul>
+            <h3>Message Form</h3>
+            <fieldset>
+                <legend>Contact Information</legend>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            
+                <button type="submit">Send Message</button>
+            </form>
+            </fieldset>
+        </section>
+    </body>
+</html>
