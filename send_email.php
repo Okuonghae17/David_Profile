@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $message, $headers);
 
     // Redirect the user after sending the email (you can customize this URL)
-    header("Location: thank_you.html");
+    header("Location: index.html");
 } else {
     // Redirect if accessed directly without form submission
     header("Location: index.html");
