@@ -72,9 +72,17 @@ button:hover {
 .project {
     margin: 20px 0;
 }
+.profilepic {
+    margin: 20px 0;
+}
 
 .project img {
     max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.profilepic img {
+     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
