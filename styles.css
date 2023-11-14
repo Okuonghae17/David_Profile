@@ -39,9 +39,10 @@ nav a {
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
+    padding: 5px 10px; /* Added padding to the navigation links */
 }
 
-nav a:hover,nav a:active {
+nav a:hover {
     color: #008080;
 }
 
@@ -51,10 +52,12 @@ section {
 
 h2 {
     color: #008080;
+    margin-bottom: 15px; /* Added margin at the bottom of each h2 */
 }
 
 p {
     line-height: 1.6;
+    margin-bottom: 15px; /* Added margin at the bottom of each paragraph */
 }
 
 .project {
@@ -66,9 +69,15 @@ img {
     height: auto;
 }
 
-/* styles.css */
-
-/* ... (existing styles) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 fieldset {
     border: 2px solid #008080;
@@ -86,6 +95,7 @@ legend {
 form {
     display: grid;
     gap: 15px;
+    padding: 15px; /* Added padding to the form */
 }
 
 label {
@@ -116,15 +126,4 @@ button {
 
 button:hover {
     background-color: #005454;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
