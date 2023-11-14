@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($to, $subject, $message, $headers);
 
     // Redirect the user after sending the email (you can customize this URL)
-    header("Location: https://zippy-dusk-6bed07.netlify.app/");
+    header("Location: Thank_You.html");
 } else {
     // Redirect if accessed directly without form submission
     header("Location: index.html");
